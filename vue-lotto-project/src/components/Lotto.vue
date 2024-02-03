@@ -14,7 +14,9 @@
             >
               {{currentNo - 1}}회
             </button>
-            &lt; {{ currentNo }}회 당첨결과 >
+            <span class="big">
+              &lt; {{ currentNo }}회 당첨결과 >
+            </span>
             <button
               :disabled="currentNo === lastNo"
               @click="currentNo += 1"
@@ -496,5 +498,8 @@ export default {
 }
 .mr20 {
   margin-right: 20px;
+}
+.big {
+  font-size: xx-large;
 }
 </style>
